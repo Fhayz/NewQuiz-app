@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>EarlyDays Mathematics Quiz</h1>
+    </header>
+    <main id="main-content">
+      <!-- User Info Form -->
+      <div id="user-info">
+        <h2>Enter Your Details</h2>
+        <form id="user-info-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" required>
+          <button type="submit">Start Quiz</button>
+        </form>
+      </div>
+
+      <!-- Quiz Container -->
+      <div id="quiz-container" style="display: none;">
+        <div id="timer">Time Left: 1:30:00</div>
+        <form id="quiz-form">
+          <div id="question-container"></div>
+          <button type="button" id="next-btn">Next</button>
+          <button type="button" id="submit-btn" style="display: none;">Submit</button>
+        </form>
+      </div>
+
+      <!-- Confirmation Page -->
+      <div id="confirmation-page" style="display: none;">
+        <h2>Are you sure you want to submit the quiz?</h2>
+        <button id="confirm-submit">Yes, Submit</button>
+        <button id="cancel-submit">No, Go Back</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Math Quiz App</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

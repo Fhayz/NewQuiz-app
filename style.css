@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #timer {
+    font-size: 18px;
+    color: #ff5733;
+  }
+  
+  main {
+    margin-bottom: 20px;
+  }
+  
+  #question-container, #user-info {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center;
+    margin: 8px 0; /* Add spacing between options */
+    cursor: pointer;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 10px; /* Space between the radio button and option text */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; /* Add spacing between buttons */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  button#submit-btn {
+    display: none; /* Initially hidden until the last question */
+  }
+  
