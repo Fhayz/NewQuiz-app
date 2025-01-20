@@ -33,7 +33,7 @@ const questions = [
   {question: "What is the square root of 32/50", options: ["5/4", "4/5", "3/4", "2/5"]},
   {question: "Which is the smallest number",options: ["0.0101", "0.17", "0.87", "0.024"] },
   {question: "Change 13/5 to mixed fraction",options: ["1 8/5", "3 2/5", "5/13", "2 3/5"]},
-  {question: "Arrange 1/3, 2/3, 3/5, 3/2 in ascending order", options:["3/5,1/3,2/3,3/2", "1/3,2/3,3/5,3/2", "1/3,3/5,2/3,3/2", "3/2,3/5,3/2,1/3"]},
+  {question: "Arrange 1/3, 2/3, 3/5, 3/2 in ascending order", options:["3/5, 1/3, 2/3, 3/2", "1/3, 2/3, 3/5, 3/2", "1/3, 3/5, 2/3, 3/2", "3/2, 3/5, 3/2, 1/3"]},
   {question: "Mary and joseph shared 32 oranges in the ratio 3: 5. How many more oranges does Joseph have than Mary?" ,options:["12", "20", "8", "10"]},
   {question: "What is 𝐶𝑀𝑋𝐶𝐼𝑋 in Hindu Arabic?", options:["979", "999", "899", "1099"]},
   {question: "By how much is [3/4 + 1/12 + 2/3] greater than 1?" ,options:["1/12", "2/3", "1/2", "3/4"]},
