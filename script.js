@@ -24,7 +24,7 @@ const questions = [
   { question: "Add up the following numbers 147 + 18 + 2874?", options: ["1396", "3216", "3639", "3039"], correct: "" },
   { question: "What us the product of 1.34 and 12.1?", options: ["1.6214", "16412", "16.214", "162.14"], correct: "" },
   { question: "Divide 612 𝑏𝑦 3", options: ["24", "204", "32", "274"], correct: "" },
-  { question: "Simplify 3 1/2 - 3/4 x  2 2/3", options: ["", "6", "7", "8"], correct: "6" },
+  { question: "Simplify 3 1/2 - 3/4 x  2 2/3", options: ["1 1/2", "1 2/3", "2 1/2", "1 1/4"], correct: "6" },
   { question: "What is the  L.C.M of 4, 8 and 12", options: ["12", "24", "36", "18"], correct: "" },
   { question: "Multiply 24 by 12 and divide you answer by 3", options: ["69", "36", "288", "96"], correct: "" },
   { image: 'Screenshot 2025-01-20 114456.png', question: "What is the area of the triangle below", options: ["12cm", "9cm", "6cm", "10cm"], correct: "" },
