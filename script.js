@@ -434,7 +434,7 @@ function showQuestion(index) {
     <h2>${index + 1}. ${question.question}</h2>
   `;
 
-  // If there is an image for this question, display it
+  // To check for an image for this question, display it
   if (question.image) {
     questionHtml += `
       <img src="${question.image}" alt="Question Image" style="max-width: 100%; height: auto; margin-bottom: 10px;">
@@ -533,8 +533,6 @@ function calculateScore() {
 }
 
 
-
-// Show Results
 // Show Results
 function showResults() {
   clearInterval(timerInterval);
