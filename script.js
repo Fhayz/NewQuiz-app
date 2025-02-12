@@ -22,25 +22,28 @@ let userId = "";
 // Quiz Questions
 const questions = [
   {
-    question: "The average weight of 6 girls is 41kg. If the weight of 5 of them are 42kg, 44kg, 40kg, 38kg, and 40kg, what is the weight of the sixth girl?",
-    options: ["42kg", "43kg", "44kg", "45kg"],
-    correct: "42kg"
+    image: "Screenshot 2025-01-30 104711.png",
+    question: "What is the value of the angle marked ‘2y’ in the diagram below?",
+    options: ["150°", "30°", "150°", "50°"],
+    correct: "30°"
+  },
+  
+  {
+    question: "What must be added to the sum of 1 1/2 and 2 1/4 to make 5 1/2?",
+    options: ["4 3/4", "3 3/4", "1 1/4", "1 3/4"],
+    correct: "1 3/4"
   },
   {
-    question: "What is the area of a circle whose circumference is 44cm?",
-    options: ["154cm²", "100cm²", "164cm²", "153cm²"],
-    correct: "154cm²"
+    question: "Express 5/8 as a decimal",
+    options: ["0.652", "0.625", "0.605", "0.265"],
+    correct: "0.625"
   },
   {
-    question: "Daniel puts N300.00 in a bank which yields an interest at 4.5% per annum. What is his amount at the end of the one year?",
-    options: ["N313.50", "N300.00", "N310.00", "N3.13"],
-    correct: "N313.50"
+    question: "Find the simple interest on N6000 for 9 months at 3% per annum.",
+    options: ["N153.00", "N1,620.00", "N135.00", "N375.00"],
+    correct: "N135.00"
   },
-  {
-    question: "A rectangular field is 15m wide and has an area of 5880m². What is the length?",
-    options: ["392m", "382m", "390m", "390m"],
-    correct: "392m"
-  },
+
   {
     question: "Solve for p in 10/P + 3 = 5",
     options: ["4/5", "5", "1/5", "1 1/5"],
@@ -88,42 +91,41 @@ const questions = [
     correct: "8 2/5"
   },
   {
+    question: "Working for 10 hours a day, a painter completes a job in 15 days. How long would it take him if he works for 6 hours a day?",
+    options: ["4 days", "20 days", "25 days", "40 days"],
+    correct: "25 days"
+  },
+  {
     question: "Solve the equation 60 – 2x = 20",
     options: ["20", "60", "-20", "40"],
     correct: "20"
+  },
+  {
+    question: "The average weight of 6 girls is 41kg. If the weight of 5 of them are 42kg, 44kg, 40kg, 38kg, and 40kg, what is the weight of the sixth girl?",
+    options: ["42kg", "43kg", "44kg", "45kg"],
+    correct: "42kg"
+  },
+  {
+    question: "What is the area of a circle whose circumference is 44cm?",
+    options: ["154cm²", "100cm²", "164cm²", "153cm²"],
+    correct: "154cm²"
+  },
+  {
+    question: "Daniel puts N300.00 in a bank which yields an interest at 4.5% per annum. What is his amount at the end of the one year?",
+    options: ["N313.50", "N300.00", "N310.00", "N3.13"],
+    correct: "N313.50"
+  },
+  {
+    question: "A rectangular field is 15m wide and has an area of 5880m². What is the length?",
+    options: ["392m", "382m", "390m", "390m"],
+    correct: "392m"
   },
   {
     question: "Efe lost N150 by selling a shirt for N450. What is his percentage loss?",
     options: ["15%", "45%", "25%", "30%"],
     correct: "25%"
   },
-  {
-    image: "Screenshot 2025-01-30 104711.png",
-    question: "What is the value of the angle marked ‘2y’ in the diagram below?",
-    options: ["150°", "30°", "150°", "50°"],
-    correct: "30°"
-  },
-  {
-    question: "Working for 10 hours a day, a painter completes a job in 15 days. How long would it take him if he works for 6 hours a day?",
-    options: ["4 days", "20 days", "25 days", "40 days"],
-    correct: "25 days"
-  },
-  {
-    question: "What must be added to the sum of 1 1/2 and 2 1/4 to make 5 1/2?",
-    options: ["4 3/4", "3 3/4", "1 1/4", "1 3/4"],
-    correct: "1 3/4"
-  },
-  {
-    question: "Express 5/8 as a decimal",
-    options: ["0.652", "0.625", "0.605", "0.265"],
-    correct: "0.625"
-  },
-  {
-    question: "Find the simple interest on N6000 for 9 months at 3% per annum.",
-    options: ["N153.00", "N1,620.00", "N135.00", "N375.00"],
-    correct: "N135.00"
-  },
-  {
+    {
     question: "Find the number which when divided by 0.7, gives 0.8 to two decimal place.",
     options: ["0.56", "1.14", "0.65", "0.68"],
     correct: "0.56"
@@ -182,6 +184,15 @@ const questions = [
     correct: "5.772"
   },
   {
+    question: "What is the product of 12 and 10 divided by 5?" , 
+    options: ["36", "20", "72", "24"], 
+    correct: "24"},
+
+  {
+    question: "What is the least common multiple of 4, 8 and 10" , 
+    options:["20", "80", "40", "48"], 
+    correct: "40"},
+  {
     question: "Express 0.07448 to 2 significant figures", 
     options: ["0.074", "0.075", "0.0745", "74"], 
     correct: "0.074"},
@@ -196,15 +207,7 @@ const questions = [
     options:["1078", "9202", "9002", "9220"], 
     correct:"9202"
   },
-  {
-    question: "What is the product of 12 and 10 divided by 5?" , 
-    options: ["36", "20", "72", "24"], 
-    correct: "24"},
 
-  {
-    question: "What is the least common multiple of 4, 8 and 10" , 
-    options:["20", "80", "40", "48"], 
-    correct: "40"},
   {
     question: "What is the square root of 18/50", 
     options:["Not possible", "3/5", "9/25", "4/7"], 
@@ -251,11 +254,43 @@ const questions = [
     options: ["9hr 44min 15sec", "10hr 44min 15sec", "11hr 34min 15sec", "8hr 54min 30sec"],
     correct: "10hr 44min 15sec"
   },
+  {
+    question:"A brand of tea is sold in packs containing 1/8 kilogram.How many packs can be obtained from a box containing 51 1/2 kilograms?", 
+    options:["512", "412", "312","212","112"], 
+    correct: "412"
+  },
+  {
+    question:"Simplify 5² + 8² + 9²", 
+    options:["25", "42", "64", "80", "86"], 
+    correct: "42"
+  },
+  {
+    question:"Evaluate ✓4 21/25", 
+    options:["3 1/3", "3 3/4", "2 1/5" , "1 3/4", "1 1/2"], 
+    correct: "2 1/5"
+  },
+  {
+    question:"The average of five numbers is 15. What must a sixth number be if the average of the six numbers is to be 16?", 
+    options:["18", "19", "20", "21", "22"], 
+    correct: "21"},
+  {
+    question:"A train travels for 150km at an average speed of 50km/h, how long does it take?", 
+    options:["1 1/2 hrs", "2 hrs", "2 1/2 hrs", "3 hrs", "3 1/2 hrs"], 
+    correct: "3 hrs"},
 
   {
     question: "Add 1.8m, 77cm, 210mm and give your answer in cm.",
     options: ["1,270.8cm", "278cm", "288.8cm", "97.1cm"],
     correct: "278cm"
+  },
+  {
+    question:"If a = 5, b = 2 find the value of ✓((a + b)² - 4ab)", 
+    options:["3","4", "5", "6", "7"], 
+    correct: "3"},
+  {
+    question:"If 2 1/2 of a sum of money is ₦15000, find the whole money", 
+    options:["₦6000", "₦60 000", "₦600 000", "₦800 000", "₦900 000"], 
+    correct: "₦600 000"
   },
 
   {
@@ -314,29 +349,7 @@ const questions = [
     question:"Simplify (1 1/4 + 5/8) ÷ 2 1/2", 
     options: ["1/2", "1/3", "2/5", "3/4", "3/8"], 
     correct: "3/4"},
-  {
-    question:"A brand of tea is sold in packs containing 1/8 kilogram.How many packs can be obtained from a box containing 51 1/2 kilograms?", 
-    options:["512", "412", "312","212","112"], 
-    correct: "412"
-  },
-  {
-    question:"Simplify 5² + 8² + 9²", 
-    options:["25", "42", "64", "80", "86"], 
-    correct: "42"
-  },
-  {
-    question:"Evaluate ✓4 21/25", 
-    options:["3 1/3", "3 3/4", "2 1/5" , "1 3/4", "1 1/2"], 
-    correct: "2 1/5"
-  },
-  {
-    question:"The average of five numbers is 15. What must a sixth number be if the average of the six numbers is to be 16?", 
-    options:["18", "19", "20", "21", "22"], 
-    correct: "21"},
-  {
-    question:"A train travels for 150km at an average speed of 50km/h, how long does it take?", 
-    options:["1 1/2 hrs", "2 hrs", "2 1/2 hrs", "3 hrs", "3 1/2 hrs"], 
-    correct: "3 hrs"},
+  
   {
     image: "Screenshot 2025-01-29 112301.png" , 
     question:"Identify the shape below", 
@@ -354,20 +367,17 @@ const questions = [
     options:["6.2", "7.8", "8.2", "10.8", "11.2"], 
     correct: "11.2"
   },
-  {
-    question:"If a = 5, b = 2 find the value of ✓((a + b)² - 4ab)", 
-    options:["3","4", "5", "6", "7"], 
-    correct: "3"},
-  {
-    question:"If 2 1/2 of a sum of money is ₦15000, find the whole money", 
-    options:["₦6000", "₦60 000", "₦600 000", "₦800 000", "₦900 000"], 
-    correct: "₦600 000"
-  },
+
   {
     image:"Screenshot 2025-01-29 115654.png", 
     question:"Find the area of the triangle below", 
     options:["300cm²", "250cm²", "90cm²", "84cm²", "74cm²"], 
     correct:"84cm²"
+  },
+  {
+    question:"Solve the equation 2x - 1 = 7x - 11", 
+    options:["1", "2", "3", "4", "5"], 
+    correct:"2"
   },
 
   {
@@ -375,11 +385,7 @@ const questions = [
     options:["22cm", "44cm", "88cm", "99cm", "110cm"],
      correct: "110cm"
   },
-  {
-    question:"Solve the equation 2x - 1 = 7x - 11", 
-    options:["1", "2", "3", "4", "5"], 
-    correct:"2"
-  },
+ 
   
 
 
